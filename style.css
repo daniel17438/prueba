@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces {
+    width: 100%;
+    background: rgb(245, 192, 143);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botones {
+    border: 0px solid rgba(0, 0, 0, 0.275);
+    background-image: linear-gradient(to right top, #e7d5d5, #ecd8d8, #f2dcdc, #f7dfdf, #fde3e3);
+    color: black;
+    padding: 10px 30px;
+    margin: 10px 30px;
+    border-radius: 15px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.botones:hover {
+    color: navy;
+    background-image: linear-gradient(to right top, #e6fbfd, #e2eef7, #e1e0ea, #ddd4da, #d3caca);
+}
+
+
+/* de esta forma di estilos para popner los botones a la derecha y el nombre a la izquierda */
+
+.nombrePagina {
+    flex: 0 1 auto;
+    border: 0px solid rgba(0, 0, 0, 0.275);
+    background: rgb(245, 192, 143);
+    color: rgb(211, 78, 78);
+    padding: 10px;
+    margin: 10px 100px;
+    border-radius: 15px;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nombrePagina:hover {
+    text-decoration: revert;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.intermedio {
+    flex: 1 1 auto;
+}
+
+
+/* animacion de las imagenes */
+
+@keyframes animaciones {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animaciones {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes animaciones {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fondo1 {
+    position: absolute;
+    width: 100%;
+    height: 83vh;
+    background-size: cover;
+    animation: animaciones 24s 0s infinite;
+    -webkit-animation: animaciones 24s 0s infinite;
+    -moz-animation: animaciones 24s 0s infinite;
+}
+
+.fondo2 {
+    position: absolute;
+    width: 100%;
+    height: 83vh;
+    background-size: cover;
+    animation: animaciones 24s 18s infinite;
+    -webkit-animation: animaciones 24s 18s infinite;
+    -moz-animation: animaciones 24s 18s infinite;
+}
+
+.fondo3 {
+    position: absolute;
+    width: 100%;
+    height: 83vh;
+    background-size: cover;
+    animation: animaciones 24s 12s infinite;
+    -webkit-animation: animaciones 24s 12s infinite;
+    -moz-animation: animaciones 24s 12s infinite;
+}
+
+.fondo4 {
+    position: absolute;
+    width: 100%;
+    height: 83vh;
+    background-size: cover;
+    animation: animaciones 24s 6s infinite;
+    -webkit-animation: animaciones 24s 6s infinite;
+    -moz-animation: animaciones 24s 6s infinite;
+}
+
+.informacion {
+    display: flex;
+    background: rgb(248, 239, 239);
+    height: 80vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.caja {
+    width: 500px;
+    margin: 20px;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    background: #d3caca;
+    border: 1px solid #ee8522;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(245, 192, 143);
+}
+
+.subCaja {
+    display: flex;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: rgb(228, 165, 106);
+    font-family: cursive;
+    font-size: 20px;
+    padding: 20px 100px 20px 100px;
+}
+
+.dimensionImg {
+    width: 400px;
+    margin: 15px auto;
+    align-items: center;
+}
+
+.ico {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    background: rgb(245, 192, 143);
+    justify-content: space-between;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.iconos {
+    /* padding: 50px;
+    margin: 100px; */
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer {
+    background: #ee8522;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.contenido {
+    margin: 30px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(11, 9, 26);
+    text-align: center;
+    margin-right: 1px solid black;
+}
